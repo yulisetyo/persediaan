@@ -91,6 +91,7 @@
 
 <script type="text/javascript">
 	jQuery(document).ready(function(){
+		jQuery('.chosen').chosen().trigger('chosen:updated');
 		jQuery('#kd_barang').focusout(function(){
 			var param = jQuery(this).val();
 			if(param != ''){
